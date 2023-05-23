@@ -9,6 +9,7 @@ from sklearn.naive_bayes import ComplementNB
 from sklearn.naive_bayes import BernoulliNB
 from sklearn import tree
 import matplotlib.pyplot as plt
+from random import randint
 
 data = pd.read_csv('iris.data', header=None)
 X = data.iloc[:, :4].to_numpy()
@@ -133,7 +134,6 @@ plt.title(
 
 plt.show()
 
-from random import randint
 
 criterion_parameters = ('gini', 'entropy', 'log_loss')
 splitter_parameter = ('best', 'random')
